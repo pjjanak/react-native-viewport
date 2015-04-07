@@ -1,0 +1,19 @@
+{
+  "name": "react-native-viewport",
+  "version": "0.0.1",
+  "description": "Viewport dimensions for react-native",
+  "keywords": ["react-component", "react-native", "react", "ios", "viewport", "screen", "dimensions"],
+  "bugs": "https://github.com/pjjanak/react-native-viewport/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Peter Janak"
+  },
+  "main": "./src/Viewport.ios.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pjjanak/react-native-viewport.git"
+  },
+  "dependencies": {
+    "react-native": "^0.3.2"
+  }
+}
