@@ -11,9 +11,8 @@
  */
 'use strict';
 
-var NativeModules = require('NativeModules');
 var RCTDeviceEventEmitter = require('RCTDeviceEventEmitter');
-var Viewport = NativeModules.Viewport;
+var ViewportManager = require('NativeModules').Viewport;
 var invariant = require('invariant');
 
 /**
@@ -62,7 +61,7 @@ Viewport.removeEventListener = function(
 Viewport.getDimensions = function(
   handler: Function
 ) {
-  Viewport.getCurrentDimensions(handler);
+  ViewportManager.getCurrentDimensions(handler);
 }
 
 module.exports = Viewport;
