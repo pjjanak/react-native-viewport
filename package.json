@@ -8,7 +8,7 @@
   "author": {
     "name": "Peter Janak"
   },
-  "main": "./src/Viewport.ios.js",
+  "main": "./Viewport.ios.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/pjjanak/react-native-viewport.git"
