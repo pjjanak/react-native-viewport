@@ -13,7 +13,7 @@ Utility to get current size of the viewport.
 
 ## Methods
 ***
-Note that any time you request dimensions you will be given an object formatted like so:
+Note that any time you receive dimensions you will be given an object formatted like so:
 
 ```
 {
