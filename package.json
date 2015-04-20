@@ -1,6 +1,6 @@
 {
   "name": "react-native-viewport",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Viewport dimensions for react-native",
   "keywords": ["react-component", "react-native", "react", "ios", "viewport", "screen", "dimensions"],
   "bugs": "https://github.com/pjjanak/react-native-viewport/issues",
@@ -14,6 +14,6 @@
     "url": "https://github.com/pjjanak/react-native-viewport.git"
   },
   "dependencies": {
-    "react-native": "^0.3.2"
+    "react-native": "^0.4.0"
   }
 }

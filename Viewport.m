@@ -29,6 +29,8 @@ static NSDictionary *RCTCurrentDimensions()
 
 @synthesize bridge = _bridge;
 
+RCT_EXPORT_MODULE();
+
 #pragma mark - Lifecycle
 
 - (instancetype)init
@@ -62,13 +64,10 @@ static NSDictionary *RCTCurrentDimensions()
 /**
  * Get the current dimensions of the viewport
  */
-- (void)getCurrentDimensions:(RCTResponseSenderBlock)callback
+RCT_EXPORT_METHOD(getCurrentDimensions:(RCTResponseSenderBlock)callback)
 {
-  RCT_EXPORT();
   _lastKnownDimensions = RCTCurrentDimensions();
-  
   callback(@[_lastKnownDimensions]);
 }
-
 
 @end
