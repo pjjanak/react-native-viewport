@@ -39,8 +39,8 @@ RCT_EXPORT_MODULE();
     _lastKnownDimensions = RCTCurrentDimensions();
     
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(deviceOrientationDidChangeNotification:)
-                                                 name:UIDeviceOrientationDidChangeNotification
+                                             selector:@selector(statusBarOrientationDidChangeNotification:)
+                                                 name:UIApplicationDidChangeStatusBarOrientationNotification
                                                object:nil];
   }
   
@@ -54,7 +54,7 @@ RCT_EXPORT_MODULE();
 
 #pragma mark - Notification methods
 
-- (void)deviceOrientationDidChangeNotification:(NSNotification*)note
+- (void)statusBarOrientationDidChangeNotification:(NSNotification*)note
 {
   _lastKnownDimensions = RCTCurrentDimensions();
   [_bridge.eventDispatcher sendDeviceEventWithName:@"dimensionsDidChange" body:_lastKnownDimensions];
