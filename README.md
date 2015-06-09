@@ -8,7 +8,7 @@ Utility to get current size of the viewport.
 3. Navigate to `node_modules/react-native-viewport`
 4. Select `Viewport.xcodeproj`
 5. Add `libViewport.a` to `Build Phases -> Link Binary With Libraries`.
-6. Click on `Viewport.xcodeproj` in `Libraries` and go the `Build Phases` tab. Double click the text to the right of `Header Search Paths` and verify that it has `$(SRCROOT)../react-native/React` - if it isn't, then add it. This is so XCode is able to find the headers that the `Viewport` source files are referring to by pointing to the header files installed within the `react-native` `node_modules` directory.
+6. Click on `Viewport.xcodeproj` in `Libraries` and go the `Build Settings` tab. Double click the text to the right of `Header Search Paths` and verify that it has `$(SRCROOT)../react-native/React` - if it isn't, then add it. This is so XCode is able to find the headers that the `Viewport` source files are referring to by pointing to the header files installed within the `react-native` `node_modules` directory.
 7. Whenever you want to use it within React code now you can: `var Viewport = require('react-native-viewport');`
 
 ## Methods
