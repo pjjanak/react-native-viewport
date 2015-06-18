@@ -14,6 +14,6 @@
     "url": "https://github.com/pjjanak/react-native-viewport.git"
   },
   "dependencies": {
-    "react-native": "^0.4.0"
+    "react-native": "^0.6.0-rc"
   }
 }
